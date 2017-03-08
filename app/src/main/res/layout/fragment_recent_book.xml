@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_recent_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/blue_all_bg"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/blue_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/blue_ib_recent_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bt_call"/>
+
+        <ImageButton
+            android:id="@+id/blue_ib_to_phone_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bt_phonebook"/>
+
+        <ImageButton
+            android:id="@+id/blue_ib_clean_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bt_clean_recent_contacts"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_recentContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/colorAccent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

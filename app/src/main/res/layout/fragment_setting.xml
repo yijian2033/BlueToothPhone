@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/bt_set_ll_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/blue_setui_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt_set_ib_backHome"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/blue_setui_homebg_selector"
+            android:src="@mipmap/bluetooth_home"/>
+
+        <Button
+            android:id="@+id/bt_set_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/blue_setui_back_selector"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/bt_set_rb_cutBluetooth"
+                style="@style/RadioButtonStyle"
+                android:checked="false"
+                android:drawableTop="@mipmap/blue_setui_bluetooth_link"
+                android:text="@string/setting_cut"/>
+
+            <RadioButton
+                android:id="@+id/bt_set_rb_bluetoothName"
+                style="@style/RadioButtonStyle"
+                android:checked="false"
+                android:drawableTop="@mipmap/blue_setui_rename"
+                android:text="@string/setting_rename"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlueToothSettingTextViewStyle"
+                    android:text="@string/setting_connected_device"/>
+
+                <TextView
+                    android:id="@+id/bt_set_tv_showLinkState"
+                    style="@style/BlueToothSettingTextViewStyle"
+                    android:paddingLeft="5dp"
+                    android:text="@string/setting_show_connected_device"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlueToothSettingTextViewStyle"
+                    android:text="@string/setting_local_name"/>
+
+                <TextView
+                    android:id="@+id/bt_set_tv_showBtName"
+                    style="@style/BlueToothSettingTextViewStyle"
+                    android:paddingLeft="5dp"
+                    android:text="BS360"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <include layout="@layout/blue_setttingui_toggle"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

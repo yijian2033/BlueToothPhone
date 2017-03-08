@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:kaituozhe="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#272727"/>
+
+    <com.conqueror.bluetoothphone.view.MySettingImageButton
+        android:id="@+id/blue_set_autoLinkToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        kaituozhe:tibTitle="@string/setting_automatic_connection"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#272727"/>
+
+    <com.conqueror.bluetoothphone.view.MySettingImageButton
+        android:id="@+id/blue_set_autoPhoneToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        kaituozhe:tibTitle="@string/setting_automatic_answer"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#272727"/>
+
+    <com.conqueror.bluetoothphone.view.MySettingImageButton
+        android:id="@+id/blue_set_cleanContactCache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        kaituozhe:tibTitle="@string/setting_cache_contacts"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#272727"/>
+
+</LinearLayout>

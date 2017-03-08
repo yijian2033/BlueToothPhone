@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- title -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30C2FD"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/setting_set_bt_name_title"
+        android:textSize="23sp" />
+    <!-- 输入框 -->
+
+    <EditText
+        android:id="@+id/dialog_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/setting_name_notice"
+        android:singleLine="true"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_selector"
+            android:text="@string/setting_ensure"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_info_selector"
+            android:text="@string/setting_cancel" />
+    </LinearLayout>
+</LinearLayout>

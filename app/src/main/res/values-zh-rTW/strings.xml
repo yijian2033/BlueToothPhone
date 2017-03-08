@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlueToothPhone</string>
+
+
+    <!--setting界面-->
+    <string name="setting_cut">斷開</string>
+    <string name="setting_rename">修改名稱</string>
+    <string name="setting_reset_pin">修改PIN</string>
+
+    <string name="setting_connected_device">連接設備：</string>
+    <string name="setting_show_connected_device">未連接</string>
+    <string name="setting_local_name">本機名稱：</string>
+    <string name="setting_pin">P&#160;&#160;&#160;&#160;&#160;I&#160;&#160;&#160;&#160;&#160;N：</string>
+
+    <string name="setting_automatic_connection">自動連接</string>
+    <string name="setting_automatic_answer">自動接聽</string>
+    <string name="setting_cache_contacts">緩存聯繫人</string>
+
+    <string name="setting_ensure">確定</string>
+    <string name="setting_cancel">取消</string>
+
+    <string name="setting_set_bt_name_title">設置藍牙名稱</string>
+    <string name="setting_name_notice">請輸入藍牙名稱</string>
+
+    <string name="setting_set_pin_title">設置PIN值</string>
+    <string name="setting_pin_notice">請輸入pin值</string>
+
+    <string name="setting_set_dialog_notice">不能為空，請重新修改</string>
+
+
+    <!--联系人界面-->
+    <string name="contact_bt_disconnected">藍牙未連接，請連接後再試</string>
+
+    <string name="phone_using">電話正在使用中</string>
+
+    <string name="bt_cut_notice">藍牙已經斷開</string>
+
+    <string name="app_not_install">應用未安裝</string>
+
+    <string name="phone_number_is_null">電話號碼不能為空</string>
+
+
+    <!--calling界面-->
+    <string name="call_keyboard">鍵盤</string>
+    <string name="call_out">去電</string>
+    <string name="call_switch_voice">聲音切換</string>
+
+    <!--来电界面-->
+    <string name="ring_income">來電</string>
+
+    <!--通话界面-->
+    <string name="talking">通話中</string>
+
+</resources>

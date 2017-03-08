@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.conqueror.bluetoothphone">
+
+    <!-- 开机启动的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- 判断app是不是前台 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- 录音部分权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name=".base.BtBaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.CallingService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".service.BlueToothService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".service.TalkingService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".service.RingService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <receiver
+            android:name=".receiver.BtBootCompletedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.conqueror.BlueTooth.ByKeyOpen"/>
+                <action android:name="com.conqueror.BlueToothPhone.Format"/>
+
+                <!-- launcher起来之后就启动服务 -->
+                <action android:name="com.bs360.notify_fm_and_bt_boot"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.BtAiosReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="aios.intent.action.phone.BOOT"/>
+
+                <!-- 语音向蓝牙请求状态 -->
+                <action android:name="action.adapter.status.request"/>
+
+                <!-- 语音拨打电话 -->
+                <action android:name="action.intent.AIOS_DIAL"/>
+
+                <!-- 语音接听电话 -->
+                <action android:name="action.intent.AIOS_ACCEPT"/>
+
+                <!-- 语音拒接电话 -->
+                <action android:name="action.intent.AIOS_REJECT"/>
+
+                <!-- 语音确定加载联系人 -->
+                <action android:name="com.conquer.aios.bt.loadContact"/>
+
+                <!-- 语音取消加载联系人 -->
+                <action android:name="com.conquer.aios.bt.cancelLoadContact"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.BtLuncherReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <!--String BLUETOOTH_ON = "com.conqueror.BLUETOOTH_ON";//开启蓝牙模块-->
+                <!--String BLUETOOTH_OFF = "com.conqueror.BLUETOOTH_OFF";//关闭蓝牙模块-->
+                <action android:name="com.conqueror.BLUETOOTH_ON"/>
+                <action android:name="com.conqueror.BLUETOOTH_OFF"/>
+
+                <!--// 真正进入停车监控-->
+                <!--public static final String ENTER_PARKING = "com.conqueror.acc.Action.EnterParking";-->
+                <action android:name="com.conqueror.acc.Action.EnterParking"/>
+
+                <!--// 真正取消停车监控-->
+                <!--public static final String NO_PARKING = "com.conqueror.acc.Action.NoParking";-->
+                <action android:name="com.conqueror.acc.Action.NoParking"/>
+
+
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 声明自定义属性 -->
+    <declare-styleable name="BlueSettingToggleView">
+        <!-- title的属性 -->
+        <attr name="tibTitle" format="string" />
+    </declare-styleable>
+
+</resources>

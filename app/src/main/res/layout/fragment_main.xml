@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/blue_iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bluetooth_home"/>
+
+
+        <EditText
+            android:id="@+id/blue_et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/edt_bg"
+            android:gravity="right"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="40sp"/>
+
+        <Button
+            android:id="@+id/blue_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bluetooth_delete_selector"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/blue_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/activity_horizontal_margin"
+        android:numColumns="6"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"/>
+
+</LinearLayout>

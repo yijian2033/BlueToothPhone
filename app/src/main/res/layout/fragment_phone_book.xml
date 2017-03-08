@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/call_background"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/blue_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/blue_ib_phone_book_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bt_call"/>
+
+        <ImageButton
+            android:id="@+id/blue_ib_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bt_reload_data"/>
+
+        <ImageButton
+            android:id="@+id/blue_ib_clean_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluetooth_home_selector"
+            android:src="@mipmap/bt_clean_phonebook"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/call_background">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<TextView-->
+            <!--android:id="@+id/tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@android:color/white" />-->
+            <!--</ScrollView>-->
+
+            <ProgressBar
+                android:id="@+id/blue_contact_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <ListView
+                android:id="@+id/contact_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:listSelector="@color/colorAccent"
+                android:visibility="visible"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

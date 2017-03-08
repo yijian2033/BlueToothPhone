@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.conqueror.bluetoothphone.view.BackLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                                                    android:id="@+id/ll_taking_bg"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@mipmap/call_background"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+    <!--  ******  去电标题部分  *******-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/call_tv_talking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="10dp"
+            android:text="@string/talking"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/call_tv_talking_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="#ffffff"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  挂断部分  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/call_ib_talking_hung_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hung_up_selector"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@mipmap/hung_up"/>
+        </LinearLayout>
+        <!--  声音切换部分  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/call_ib__talking_voice_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voice_switch_selector"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@mipmap/voice_switch"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.conqueror.bluetoothphone.view.BackLinearLayout>

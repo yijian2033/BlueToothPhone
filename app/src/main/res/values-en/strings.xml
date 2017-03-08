@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlueToothPhone</string>
+
+
+    <!--setting界面-->
+    <string name="setting_cut">Interrupt</string>
+    <string name="setting_rename">ResetName</string>
+    <string name="setting_reset_pin">ResetPIN</string>
+
+    <string name="setting_connected_device">ConnectedDevice：</string>
+    <string name="setting_show_connected_device">Disconnected</string>
+    <string name="setting_local_name">NativeName：</string>
+    <string name="setting_pin">P&#160;&#160;&#160;&#160;&#160;I&#160;&#160;&#160;&#160;&#160;N：</string>
+
+    <string name="setting_automatic_connection">AutomaticConnection</string>
+    <string name="setting_automatic_answer">AutomaticAnswer</string>
+    <string name="setting_cache_contacts">CacheContacts</string>
+
+    <string name="setting_ensure">ENSURE</string>
+    <string name="setting_cancel">CANCEL</string>
+
+    <string name="setting_set_bt_name_title">SetTheBluetoothName</string>
+    <string name="setting_name_notice">Please enter the bluetooth name</string>
+
+    <string name="setting_set_pin_title">SetThe PIN Value</string>
+    <string name="setting_pin_notice">Please enter the pin value</string>
+
+    <string name="setting_set_dialog_notice">Can not be empty, please modify it again</string>
+
+
+    <!--联系人界面-->
+    <string name="contact_bt_disconnected">Bluetooth not connected, please try again after connection</string>
+
+    <string name="phone_using">The phone is in use</string>
+
+    <string name="bt_cut_notice">Bluetooth has been disconnected</string>
+
+    <string name="app_not_install">Application not installed</string>
+
+    <string name="phone_number_is_null">Phone number can not be empty</string>
+
+
+    <!--calling界面-->
+    <string name="call_keyboard">键盘</string>
+    <string name="call_out">CallUp</string>
+    <string name="call_switch_voice">声音切换</string>
+
+    <!--来电界面-->
+    <string name="ring_income">CallIn</string>
+
+    <!--通话界面-->
+    <string name="talking">Talking</string>
+
+
+</resources>
